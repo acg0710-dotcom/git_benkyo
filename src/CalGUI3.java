@@ -1,12 +1,17 @@
 import javax.swing.*;
 import java.awt.*;
 
+// CalGUI3 라는 이름의 클래스를 만들고, Swing의 JFrame(기본 윈도우창)을 상속받음
+// 상속 받으면 CalGUI3 자체가 하나의 독립된 프로그램 창 역할을 수행하게 됨
 public class CalGUI3 extends JFrame {
+    // 숫자를 입력받고 결과를 보여줄 한 줄짜리 텍스트 입력 영역변수를 선언
+    // 다른 메소드나 이벤트 처리 시에도 접근하기 쉽게 멤버 변수(필드)로 빼둠
     JTextField jtf;
 
     // 생성자 메서드
     public CalGUI3() {
         this.setLayout(new BorderLayout(10, 10));
+        // 입력창 객체화
         jtf = new JTextField();
         jtf.setFont(new Font("맑은 고딕", Font.BOLD, 24));
         jtf.setHorizontalAlignment(JTextField.RIGHT);
